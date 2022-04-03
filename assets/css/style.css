@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(14, 21, 87);
+  color: white;
+  text-align: center;
+  height: 55px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+nav {
+  font-size: large;
+  font-weight: bold;
+  margin: 20px;
+}
+
+input {
+  margin: 15px;
+}
+
+#submit {
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit:hover {
+  background-color: rgb(0, 0, 172);
+}
+
+#submit:active {
+  background-color: rgb(0, 0, 139);
+}
+
+button {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 8px;
+  border-radius: 12px;
+  margin: 15px;
+  width: 25%;
+  background: #c5c4c4;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background: #858585;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:active {
+  background: #2e2e2e;
+  color: rgb(185, 185, 185);
+  font-family: Arial, Helvetica, sans-serif;
+}

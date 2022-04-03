@@ -2,7 +2,6 @@ var cityNameInput = document.getElementById("citynameinput");
 var submitButton = document.getElementById("submit");
 var weatherApiKey = "63272ad5fdffaa171b73c47741075154";
 
-
 function weatherData(coordData) {
   var lat = coordData.lat;
   var lon = coordData.lon;
@@ -36,10 +35,10 @@ function cityCoord() {
     });
 }
 
-function displayWeather(weatherData){
-    // to use the data for your html doc use this syntax: weatherData.current.temp
-    // and then element.textContent =  weatherData.current.temp
-    // if the data is in an array do something like this: weatherData.daily[0].temp.max
+function displayWeather(weatherData) {
+  // to use the data for your html doc use this syntax: weatherData.current.temp
+  // and then element.textContent =  weatherData.current.temp
+  // if the data is in an array do something like this: weatherData.daily[0].temp.max
 }
 
 submitButton.addEventListener("click", cityCoord);
