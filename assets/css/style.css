@@ -21,9 +21,15 @@ input {
   margin: 15px;
 }
 
+h3 {
+  margin-top: 300px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
 .container {
   margin-top: -800px;
-  margin-left: 300px;
+  margin-left: 400px;
   background-color: #c5c4c4;
   outline-color: #aa1d1d;
   outline-width: 15px;
@@ -44,16 +50,16 @@ input {
 }
 
 input {
-  width: 250px;
+  width: 300px;
 }
 
 button {
   color: rgb(0, 0, 0);
   display: block;
-  padding: 8px;
+  padding: 10px;
   border-radius: 12px;
   margin: 15px;
-  width: 250px;
+  width: 300px;
   background: #c5c4c4;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
