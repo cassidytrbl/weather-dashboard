@@ -34,6 +34,10 @@ h3 {
   outline-width: 15px;
 }
 
+.mainbox {
+  margin-top: -800px;
+}
+
 #submit {
   color: rgb(255, 255, 255);
   background-color: blue;
