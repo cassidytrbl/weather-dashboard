@@ -48,8 +48,37 @@ function cityCoord() {
 }
 
 function displayWeather(weatherData) {
+  console.log(weatherData);
+  var timestamp = weatherData.current.dt;
+  var time = new Date(timestamp * 1000).toLocaleDateString("en-US");
+  document.getElementById("temp").textContent =
+    "Temp: " + weatherData.current.temp;
   document.getElementById("time-zone").textContent =
     "Time Zone: " + weatherData.timezone;
+  document.getElementById("humd").textContent =
+    "Humidity: " + weatherData.current.humidity;
+  document.getElementById("uv").textContent =
+    "UV Index: " + weatherData.current.uvi;
+  document.getElementById("wind").textContent =
+    "Wind :" + weatherData.current.wind_speed;
+  document.getElementById("time").textContent = "Time :" + time;
+  assignValues(weatherData.daily[1], "One");
+  assignValues(weatherData.daily[2], "Two");
+  assignValues(weatherData.daily[3], "Three");
+  assignValues(weatherData.daily[4], "Four");
+  assignValues(weatherData.daily[5], "Five");
+}
+
+function assignValues(weatherData, day) {
+  var timestamp = weatherData.dt;
+  var time = new Date(timestamp * 1000).toLocaleDateString("en-US");
+  document.getElementById("time" + day).textContent = "Time :" + time;
+  document.getElementById("wind" + day).textContent =
+    "Wind :" + weatherData.wind_speed;
+  document.getElementById("humd" + day).textContent =
+    "Humidity: " + weatherData.humidity;
+  document.getElementById("temp" + day).textContent =
+    "Temp: " + weatherData.temp.day;
 }
 
 submitButton.addEventListener("click", cityCoord);
