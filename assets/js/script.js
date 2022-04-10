@@ -49,8 +49,12 @@ function cityCoord() {
 
 function displayWeather(weatherData) {
   console.log(weatherData);
+  var iconUrl = `https://openweathermap.org/img/w/${weatherData.current.weather[0].icon}.png`;
   var timestamp = weatherData.current.dt;
-  var time = new Date(timestamp * 1000).toLocaleDateString("en-US");
+  var time = new Date(timestamp * 1000).toLocaleTimeString("en-US", {
+    timeZone: weatherData.timezone,
+  });
+  document.getElementById("icon").setAttribute("src", iconUrl);
   document.getElementById("temp").textContent =
     "Temp: " + weatherData.current.temp;
   document.getElementById("time-zone").textContent =
